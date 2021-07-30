@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Playfair+Display&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.pengantar {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.konten {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 5%;
+  min-height: 100vh;
+}
+
+.kepala {
+  max-width: 60%;
+  margin: 10px 10px;
+}
+
+.komposisi {
+  margin: 5%;
+}
+
+.judul {
+  font-family: 'Playfair Display', serif;
+}
+
+.time-serve {
+  position: absolute;
+  left: 78%;
+  top: 100%;
+  width: 216px;
+  height: 367px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.serve {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  text-align: center;
+  width: 200px;
+  height: 360px;
+  margin-top: 3vh;
+}
+
+.atas {
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+  /* Gray 4 */
+  color: #BDBDBD;
+}
+
+#bawah {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #F2994A;
+  font-weight: bold;
+}
+
+.bawah {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: black;
+  font-weight: bold;
+}
+
+.material-icons.orange600 {
+  color: #FB8C00;
+  font-size: 36px;
+}
+
+.material-icons.black600 {
+  color: #4F4F4F;
+  font-size: 36px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 64px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.gambar img {
+  max-width: 95%;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  max-width: 50%;
+}
+
+.ins-lengkap {
+  max-width: 60%;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.nomor {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  background-color: tomato;
+  text-align: center;
+  margin: 10px;
+  color: white;
+  font-family: Playfair Display;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.instruksi {
+  margin: 10px;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+input[type="checkbox"] {
+  width: 21px;
+  height: 21px;
+  background-color: #d5d5d5;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+label {
+  margin: 5px;
+}
+
+.sumber {
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #008b8b;
+  font-weight: bold;
+}
+
+@media (max-width:720px) {
+  .kepala {
+    max-width: 100%;
+  }
+
+  .konten {
+    margin: auto;
+  }
+
+  .ins-lengkap {
+    max-width: 100%;
+  }
+
+  form {
+    max-width: 100%;
+  }
+
+  .time-serve {
+    margin: 20px;
+    position: relative;
+    left: 2%;
+    width: 95vh;
+    height: 15vh;
+    display: grid;
+  }
+
+  .serve {
+    grid-template-columns: repeat(8, 1fr);
+    grid-gap: 15%;
+    margin-left: 5%
+  }
+}
+
+@media (max-width:500px) {
+  .time-serve {
+    margin: 20px 0;
+    position: relative;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: grid;
+  }
+
+  .serve {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15%;
+    margin-left: 5%
+  }
+}
